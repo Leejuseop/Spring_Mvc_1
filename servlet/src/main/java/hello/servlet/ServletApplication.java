@@ -10,6 +10,8 @@ public class ServletApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServletApplication.class, args);
+
+		//강의 안들은거부터 보면됨
 	}
 
 }

@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(name = "requsetHeaderServlet", urlPatterns = "/request-header")
 public class RequestHeaderServlet extends HelloServlet{
     
+    /*
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         printStartLine(request);
@@ -47,7 +48,7 @@ private void printHeaders(HttpServletRequest request) {
     String headerName = headerNames.nextElement();
     System.out.println(headerName + ": " + request.getHeader(headerName));
     }
-   */
+   
     request.getHeaderNames().asIterator()
     .forEachRemaining(headerName -> System.out.println(headerName + ": "
    + request.getHeader(headerName)));
@@ -107,4 +108,5 @@ private void printEtc(HttpServletRequest request) {
     System.out.println();
    
 }
+*/
 }
