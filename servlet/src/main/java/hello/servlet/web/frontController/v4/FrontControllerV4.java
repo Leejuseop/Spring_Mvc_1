@@ -9,8 +9,6 @@ import hello.servlet.web.frontController.v4.controller.MemberFormControllerV4;
 import hello.servlet.web.frontController.v4.controller.MemberListControllerV4;
 import hello.servlet.web.frontController.v4.controller.MemberSaveControllerV4;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -23,8 +21,8 @@ public class FrontControllerV4 extends HttpServlet{
     
     public FrontControllerV4(){
         controllerMap.put("/front-controller/v4/members/new-form",new MemberFormControllerV4());
-        controllerMap.put("/front-controller/v4/members/save-result",new MemberSaveControllerV4());
-        controllerMap.put("/front-controller/v4/members/members",new MemberListControllerV4());
+        controllerMap.put("/front-controller/v4/members/save",new MemberSaveControllerV4());
+        controllerMap.put("/front-controller/v4/members",new MemberListControllerV4());
     }
 
     @Override
