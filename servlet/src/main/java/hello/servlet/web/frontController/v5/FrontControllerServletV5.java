@@ -17,8 +17,6 @@ import hello.servlet.web.frontController.v4.controller.MemberSaveControllerV4;
 import hello.servlet.web.frontController.v5.adapter.ControllerV3HandlerAdapter;
 import hello.servlet.web.frontController.v5.adapter.ControllerV4HandlerAdapter;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
